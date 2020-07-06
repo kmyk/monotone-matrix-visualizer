@@ -95,12 +95,9 @@ function estimateHowMuchNotMonotone(f: number[][]): number {
     let penalty = 0;
     for (let y1 = 0; y1 < h; ++ y1) {
         for (let y2 = y1 + 1; y2 < h; ++ y2) {
-            for (let x1 of argmin[y1]) {
-                for (let x2 of argmin[y2]) {
-                    if (x1 > x2) {
-                        penalty += 1;
-                    }
-                }
+            const pred = (argmin[y1][0] <= argmin[y2][0] && argmin[y1][argmin[y1].length - 1] <= argmin[y2][argmin[y2].length - 1]);
+            if (! pred) {
+                penalty += 1;
             }
         }
     }

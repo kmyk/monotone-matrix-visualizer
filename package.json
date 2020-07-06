@@ -1,5 +1,5 @@
 {
-  "name": "monge-tm-monotone-viewer",
+  "name": "monge-visualizer",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",

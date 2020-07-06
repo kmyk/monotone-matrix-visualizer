@@ -1,6 +1,6 @@
-# Visualizer of Monge matrices, totally monotone matrices, and monotone matrices
+# Visualizer of monotone, totally monotone, and Monge
 
-demo: <https://kmyk.github.io/monge-tm-monotone-visualizer/>
+demo: <https://kmyk.github.io/monge-visualizer/>
 
 ## how to build locally
 
