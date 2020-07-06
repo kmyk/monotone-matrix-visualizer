@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Visualizer of Monge matrices, totally monotone matrices, and monotone matrices</title>
+        <title>Visualizer of monotone, totally monotone, and Monge</title>
         <script src="bundle.js"></script>
 
         <!-- KaTeX -->
@@ -19,13 +19,13 @@
         </script>
     </head>
     <body>
-        <h1>Visualizer of Monge matrices, totally monotone matrices, and monotone matrices</h1>
+        <h1>Visualizer of monotone, totally monotone, and Monge</h1>
 
         <h2>random</h2>
         <table id="random"></table>
 
         <h2>monotone</h2>
-        <p>A $H \times W$ matrix $f$ is monotone iff $\forall y y'. \forall x \in \mathrm{argmin} _ x f(y, x). \forall x' \in \mathrm{argmin} _ {x'} f(y', x'). x \lt x'$ holds.</p>
+        <p>A $H \times W$ matrix $f$ is monotone iff $\forall y y'. \forall x \in \mathrm{argmin} _ x f(y, x). \exists x' \in \mathrm{argmin} _ {x'} f(y', x'). x \le x'$ and $\forall y y'. \forall x' \in \mathrm{argmin} _ {x'} f(y', x'). \exists x \in \mathrm{argmin} _ x f(y, x). x \le x'$ holds. If we assume each row of $f$ is distinct, the definition can be written as $\mathrm{argmin} _ x f(y, x) \le \mathrm{argmin} _ {x'} f(y', x')$.</p>
         <table id="monotone"></table>
 
         <h2>totally monotone</h2>
@@ -33,7 +33,7 @@
         <table id="totally-monotone"></table>
 
         <h2>Monge</h2>
-        <p>A $H \times W$ matrix $f$ is Monge iff $\forall y y' x x'. y \lt y' \land x \lt x' \to f(y, x') + f(y', x) \ge f(y, x) + f(y', x')$ holds.</p>
+        <p>A $H \times W$ matrix $f$ is Monge iff $\forall y y' x x'. y \lt y' \land x \lt x' \to f(y', x') - f(y', x) \le f(y, x') - f(y, x)$ holds.</p>
         <table id="monge"></table>
 
         <hr>
