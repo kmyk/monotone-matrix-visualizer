@@ -1,0 +1,15 @@
+{
+  "name": "monge-tm-monotone-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "tsc && browserify ./build/index.js -o ./build/bundle.js && cp -r ./public/* ./build/"
+  },
+  "author": "Kimiyuki Onaka",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "typescript": "^3.9.6"
+  }
+}
