@@ -25,7 +25,7 @@
         <table id="random"></table>
 
         <h2>monotone</h2>
-        <p>A $H \times W$ matrix $f$ is monotone iff $\forall y y'. \forall x \in \mathrm{argmin} _ x f(y, x). \exists x' \in \mathrm{argmin} _ {x'} f(y', x'). x \le x'$ and $\forall y y'. \forall x' \in \mathrm{argmin} _ {x'} f(y', x'). \exists x \in \mathrm{argmin} _ x f(y, x). x \le x'$ holds. If we assume each row of $f$ is distinct, the definition can be written as $\mathrm{argmin} _ x f(y, x) \le \mathrm{argmin} _ {x'} f(y', x')$.</p>
+        <p>A $H \times W$ matrix $f$ is monotone iff $\forall y y'. y \lt y' \to \forall x \in \mathrm{argmin} _ x f(y, x). \exists x' \in \mathrm{argmin} _ {x'} f(y', x'). x \le x'$ and $\forall y y'. y \lt y' \to \forall x' \in \mathrm{argmin} _ {x'} f(y', x'). \exists x \in \mathrm{argmin} _ x f(y, x). x \le x'$ holds. If we assume each row of $f$ is distinct, the definition can be written as $\mathrm{argmin} _ x f(y, x) \le \mathrm{argmin} _ {x'} f(y', x')$.</p>
         <table id="monotone"></table>
 
         <h2>totally monotone</h2>
