@@ -1,6 +1,6 @@
 # Visualizer of monotone, totally monotone, and Monge
 
-demo: <https://kmyk.github.io/monge-visualizer/>
+demo: <https://kmyk.github.io/monotone-matrix-visualizer/>
 
 ## how to build locally
 
