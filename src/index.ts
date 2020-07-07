@@ -158,6 +158,7 @@ function visualizeMatrix(f: number[][], range: number, table: HTMLTableElement):
             const td = document.createElement('td') as HTMLTableCellElement;
             td.textContent = f[y][x].toString();
             td.style.backgroundColor = getColorOfValue(f[y][x], range);
+            td.style.textAlign = 'right';
             tr.insertBefore(td, null);
         }
         tbody.insertBefore(tr, null);
